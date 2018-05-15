@@ -48,7 +48,7 @@ int main()
 		hv_object.calculation();
 		af::array Hv = hv_object.getHv();
 		af::array Ie = af::identity(Ne, Ne, f64);
-		af_print(Hv);
+		//af_print(Hv);
 
 		H_coupling hc_object = H_coupling();
 		hc_object.calculation();
@@ -65,7 +65,7 @@ int main()
 
 		//std::cout << trace(Heq) << std::endl;
 		//af_print(matpow(Heq, 0).rows(0,9).cols(0,9));
-		std::cout << factorial(3) << std::endl;
+		//std::cout << factorial(3) << std::endl;
 
 		//std::cin.get();
 	}
