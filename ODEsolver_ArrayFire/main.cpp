@@ -67,7 +67,7 @@ int main()
 		//af_print(matpow(Heq, 0).rows(0,9).cols(0,9));
 		//std::cout << factorial(3) << std::endl;
 
-		//std::cin.get();
+		std::cin.get();
 	}
 	catch (std::exception& e)
 	{
