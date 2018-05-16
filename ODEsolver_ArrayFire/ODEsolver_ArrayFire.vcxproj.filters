@@ -54,6 +54,12 @@
     <ClCompile Include="Factorial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PadeApprox_pkm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PadeApprox_qkm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="constants_parameters.h">
@@ -96,6 +102,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Factorial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PadeApprox_pkm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PadeApprox_qkm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

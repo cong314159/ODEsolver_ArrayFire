@@ -143,6 +143,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MatrixPower.cpp" />
     <ClCompile Include="PadeApprox.cpp" />
+    <ClCompile Include="PadeApprox_pkm.cpp" />
+    <ClCompile Include="PadeApprox_qkm.cpp" />
     <ClCompile Include="trace.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +161,8 @@
     <ClInclude Include="kron.h" />
     <ClInclude Include="MatrixPower.h" />
     <ClInclude Include="PadeApprox.h" />
+    <ClInclude Include="PadeApprox_pkm.h" />
+    <ClInclude Include="PadeApprox_qkm.h" />
     <ClInclude Include="trace.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

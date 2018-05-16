@@ -1,3 +1,3 @@
 #pragma once
 
-long long factorial(int a);
+double factorial(int a);

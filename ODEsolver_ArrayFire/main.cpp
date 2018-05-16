@@ -17,6 +17,7 @@
 #include "trace.h"
 #include "MatrixPower.h"
 #include "Factorial.h"
+#include "PadeApprox.h"
 
 int main()
 {
@@ -64,8 +65,10 @@ int main()
 		//af_print(Heq.cols(0,9).rows(20, 29));
 
 		//std::cout << trace(Heq) << std::endl;
-		//af_print(matpow(Heq, 0).rows(0,9).cols(0,9));
+		//af_print(matpow(Heq, 0));
 		//std::cout << factorial(3) << std::endl;
+
+		af_print(padeApprox(Heq, 13).rows(0,9).cols(0,9));
 
 		//std::cin.get();
 	}

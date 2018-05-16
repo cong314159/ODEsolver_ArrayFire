@@ -8,9 +8,10 @@
 
 #include "PadeApprox.h"
 #include "MatrixPower.h"
+#include "PadeApprox_pkm.h"
+#include "PadeApprox_qkm.h"
 
 af::array padeApprox(af::array & a, int m)
 {
-
-	return af::array();
+	return pkm(a, m) * af::inverse(qkm(a, m));
 }

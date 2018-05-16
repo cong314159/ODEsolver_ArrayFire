@@ -8,7 +8,7 @@
 
 #include "Factorial.h"
 
-long long factorial(int a)
+double factorial(int a)
 {
 	if (a == 0)
 	{
