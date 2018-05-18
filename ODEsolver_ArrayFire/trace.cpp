@@ -12,7 +12,8 @@ af::cdouble trace(af::array & a)
 {
 	if (a.dims(0) != a.dims(1))
 	{
-		return af::cdouble(0,0);
+		std::cout << "attempting to trace a non square matrix" << std::endl;
+		return 0;
 	}
 	else
 	{
@@ -23,10 +24,10 @@ af::cdouble trace(af::array & a)
 			//af_print(a(id, id));
 			tr_array += a(id, id);
 		}
-		
-		af::cdouble * tr_array_host = tr_array.host<af::cdouble>();
-		af::cdouble tr = tr_array_host[0];
-		af::freeHost(tr_array_host);
+
+		af::cdouble * tr_host = tr_array.host<af::cdouble>();
+		af::cdouble tr = tr_host[0];
+		af::freeHost(tr_host); // this step is a must
 
 		return tr;
 	}

@@ -17,7 +17,7 @@
 #include "trace.h"
 #include "MatrixPower.h"
 #include "Factorial.h"
-#include "PadeApprox.h"
+#include "expm.h"
 
 int main()
 {
@@ -62,15 +62,20 @@ int main()
 		//af_print(he_object.getHe(cf, dp, da, (double)0.12354645677658));
 
 		af::array Heq = Hev + kron(He, Iv) + kron(Ie, Hv);
-		//af_print(Heq.cols(0,9).rows(20, 29));
+		//af_print(Heq.cols(0,9).rows(0,9));
 
 		//std::cout << trace(Heq) << std::endl;
 		//af_print(matpow(Heq, 0));
 		//std::cout << factorial(3) << std::endl;
-
-		af_print(padeApprox(Heq, 13).rows(0,9).cols(0,9));
-
 		//std::cin.get();
+
+		//af::array Z_array = expm(-Heq / kb / temp);
+		//af_print(expm(-Heq / kb / temp).rows(0, 9).cols(0, 9));
+		//af::cdouble Z = trace(Z_array);
+		//af::array rho_eq = expm(-Heq / kb / temp) / Z;
+
+		// read the thermal equilibrium density matrix instead
+
 	}
 	catch (std::exception& e)
 	{

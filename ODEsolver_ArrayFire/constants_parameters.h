@@ -9,7 +9,7 @@ double hbar_eVs = 6.582e-16; // [eV*s / rad] reduced planck constant
 double kb = 8.617e-5; // [eV / K] boltzmann constant in eVs
 
 double a = 1; // [nm]
-double temp = 300; // [K]
+double temp = 1; // [K]
 double f_inv_cms = 298; // [1 / cms]
 double m_amu = 5.58; // [amu]
 double lambda = 440; // [meV]

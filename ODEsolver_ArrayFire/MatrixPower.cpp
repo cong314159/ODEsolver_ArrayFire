@@ -12,7 +12,7 @@ af::array matpow(af::array & a, int p)
 {
 	if (p == 0)
 	{
-		return af::identity(a.dims(0), a.dims(1), f64);
+		return af::identity(a.dims(0), a.dims(1), c64);
 	}
 	else
 	{
