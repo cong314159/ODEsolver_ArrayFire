@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <cmath>
 #include <cstdlib>
+#include <fstream>
+#include <string>
 
 #include "constants_parameters.h"
 #include "ClockField.h"
@@ -75,7 +77,24 @@ int main()
 		//af::array rho_eq = expm(-Heq / kb / temp) / Z;
 
 		// read the thermal equilibrium density matrix instead
-
+		std::ifstream file;
+		file.open("rhoEq.txt");
+		std::string line;
+		if (file.fail())
+		{
+			std::cerr << "Error opening file" << std::endl;
+			exit(1);
+		}
+		//double rho_eq_data[];
+		while (std::getline(file, line))
+		{
+			std::istringstream iss(line);
+			std::string word;
+			while (iss >> word)
+			{
+				std::cout << word << std::endl;
+			}
+		}
 	}
 	catch (std::exception& e)
 	{
